@@ -1,0 +1,106 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    min-height: 100vh;
+}
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* main body */
+#add-book{
+    background-color: white;
+    border: none;
+}
+
+#add-book:hover{
+    background-color: black;
+}
+
+.card{
+    height: 150px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 1em;
+    border: 1px solid hotpink;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+/* footer */
+
+/* Modal & Form */
+.form-inactive{
+    transform: scale(0);
+}
+
+.form-active{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: scale(1) translate(-50%,-50%);
+    transition: 200ms ease;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: azure;
+    z-index: 10;
+    max-width: 80%;
+}
+
+.form-active > ul > li{
+    list-style-type: none;
+    text-align: center;
+    transform: scale(1.5);
+    padding: 20px;
+}
+
+#submit{
+    height: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+
+#overlay.overlay-active{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 5;
+    transition: 200ms ease;
+}
+
+.footer{
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin-top: auto;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">reading list</div>
+            <div class="header-button">
+                <button id="login">Log In</button>
+            </div>
+        </div>
+        <div class="add-button">
+            <button id="add-book">+ Add Book</button>
+        </div>
+        <div id="card-container" class="card-container"></div>
+        <div class="footer">
+            Copyright © 2022 Chasingtherain
+            <a href="https://github.com/chasingtherain">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="modal">
+            <form id="form" class="form-inactive">
+                <ul>
+                    <li><h3>Add new book</h3></li>
+                    <li><input type="text" name="title"placeholder="Title"required></li>
+                    <li><input type="text" name="author"placeholder="Author" required></li>
+                    <li> <input type="number" name="pages"placeholder="Pages" min="1" required></li>
+                    <li>
+                        <input type="checkbox" name="read">
+                        <label for="read">Have you read the book?</label>
+                    </li>
+                </ul>
+                <input id="submit" type="submit" name="Submit" value="Submit">
+            </form>
+        </div>
+        <div id="overlay"></div>
+    </div>
+</body>
+</html>
