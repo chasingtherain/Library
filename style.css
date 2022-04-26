@@ -1,8 +1,28 @@
+/* main */
+
+body{
+    background-color: rgba(195, 187, 187, 0.3);
+}
 .main-container{
     display: flex;
     flex-direction: column;
     align-content: space-between;
     min-height: 100vh;
+}
+
+button,
+#submit{
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border-style: none;
+    border: 1px solid grey;
+    font-size: 15px;
+}
+
+#add-book:hover,
+button:hover{
+    background-color:rgba(171, 169, 169, 0.7);
 }
 
 /* header */
@@ -11,6 +31,15 @@
     justify-content: space-between;
 }
 
+.logo{
+    margin-left: 10px;
+    font-size: 35px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+#login{
+    margin-right: 5px;
+}
 
 .card-container{
     display: flex;
@@ -21,21 +50,34 @@
 
 /* main body */
 #add-book{
-    background-color: white;
     border: none;
+    background-color:rgba(195, 187, 187, 0);
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-#add-book:hover{
-    background-color: black;
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    
 }
+
+
 
 .card{
-    height: 150px;
-    width: 200px;
+    height: 200px;
+    width: 300px;
     font-size: 20px;
     border-radius: 5px;
     box-shadow: 1em;
-    border: 1px solid hotpink;
+    border: 1px solid rgb(87, 81, 84,0.5);
+    background-color: rgba(63, 215, 215, 0.2);
+    padding: 10px; 
     display: flex;
     justify-content: center;
     align-content: center;
@@ -44,9 +86,17 @@
     gap: 8px;
 }
 
+.completed-reading{
+    background-color: rgba(23, 223, 70, 0.65);
+}
+
 /* footer */
 
 /* Modal & Form */
+#modal-title{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 .form-inactive{
     transform: scale(0);
 }
@@ -59,13 +109,13 @@
     transition: 200ms ease;
     border: 1px solid black;
     border-radius: 5px;
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: azure;
+    background-color: rgb(210, 251, 251);;
     z-index: 10;
     max-width: 80%;
 }
@@ -75,6 +125,11 @@
     text-align: center;
     transform: scale(1.5);
     padding: 20px;
+    margin-right: 25px;
+}
+
+#pages{
+    width: 140px;
 }
 
 #submit{
@@ -97,10 +152,9 @@
 }
 
 .footer{
+    position:fixed;
     bottom: 0;
+    width: 100%;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-    margin-top: auto;
+    margin-bottom: 5px;
 }
