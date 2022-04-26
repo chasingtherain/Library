@@ -27,5 +27,8 @@ Add book button
 
 key takeaways:
 - making of modal form
+- modal animation
+- adding of overlay to prevent user input when modal form is open
+- capturing user input via modal form without accessing from server
 - saving form data to local storage
 - manipulating object data in dom
